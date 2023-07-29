@@ -23,7 +23,7 @@
           <span class="logo">Studio</span>
         </a>
         <ul class="list-nav-filter list container-nav">
-          <li class="focused marker">
+          <li class="focused current">
             <a class="navigation-item link list-link focused" href="./index.html">Studio</a>
           </li>
           <li class="focused">
@@ -50,7 +50,7 @@
     <section class=" section-subject">
       <div class="container container-subject">
         <h1 class="title">Effective Solutions for Your Business</h1>
-        <button class="title-button button focused" type="button">Order Service</button>
+        <button class="title-button button focused" type="button" data-modal-open>Order Service</button>
       </div>
     </section>
     <section class="section-heading">
@@ -58,9 +58,11 @@
         <h2 class="visually-hidden">advantages</h2>
         <ul class="list-advantages list">
           <li class="item-advantages">
-            <svg>
-              <use href="./images/icons.svg.svg#icon-antenna" width="64px" height="64px"></use>
-            </svg>
+            <div class="item-advantages-icon">
+              <svg class="icon-advantages" width="64" height="64">
+                <use href="./images/icons.svg.svg#icon-antenna"></use>
+              </svg>
+            </div>
             <h3 class="subtitle">Strategy</h3>
             <p class="subtitle-text">
               Our goal is to identify the business problem
@@ -69,9 +71,11 @@
             </p>
           </li>
           <li class="item-advantages">
-            <svg>
-              <use href="./images/icons.svg.svg#icon-clock" width="64px" height="64px"></use>
-            </svg>
+            <div class="item-advantages-icon">
+              <svg class="icon-advantages" width="64" height="64">
+                <use href="./images/icons.svg.svg#icon-clock"></use>
+              </svg>
+            </div>
             <h3 class="subtitle">Punctuality</h3>
             <p class="subtitle-text">
               Bring the key message to the brand's audience
@@ -80,9 +84,11 @@
             </p>
           </li>
           <li class="item-advantages">
-            <svg>
-              <use href="./images/icons.svg.svg#icon-diagram" width="64px" height="64px"></use>
-            </svg>
+            <div class="item-advantages-icon">
+              <svg class="icon-advantages" width="64" height="64">
+                <use href="./images/icons.svg.svg#icon-diagram"></use>
+              </svg>
+            </div>
             <h3 class="subtitle">Diligence</h3>
             <p class="subtitle-text">
               Research and confirm brands that present the
@@ -91,9 +97,11 @@
             </p>
           </li>
           <li class="item-advantages">
-            <svg>
-              <use href="./images/icons.svg.svg#icon-astronaut" width="64px" height="64px"></use>
-            </svg>
+            <div class="item-advantages-icon">
+              <svg class="icon-advantages" width="64" height="64">
+                <use href="./images/icons.svg.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <h3 class="subtitle">Technologies</h3>
             <p class="subtitle-text">
               Design practice focused on digital
@@ -129,6 +137,37 @@
             <div class="employee">
               <h3 class="name">Mark Guerrero</h3>
               <p class="profession">Product Designer</p>
+              <ul class="profession-icon">
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://www.instagram.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-instagram" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://twitter.com/?lang=uk">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-twitter" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://uk-ua.facebook.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-facebook" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession"
+                    href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-linkedin" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="title-team-item">
@@ -136,6 +175,37 @@
             <div class="employee">
               <h3 class="name">Tom Ford</h3>
               <p class="profession">Frontend Developer</p>
+              <ul class="profession-icon">
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://www.instagram.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-instagram" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://twitter.com/?lang=uk">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-twitter" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://uk-ua.facebook.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-facebook" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession"
+                    href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-linkedin" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="title-team-item">
@@ -143,6 +213,37 @@
             <div class="employee">
               <h3 class="name">Camila Garcia</h3>
               <p class="profession">Marketing</p>
+              <ul class="profession-icon">
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://www.instagram.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-instagram" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://twitter.com/?lang=uk">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-twitter" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://uk-ua.facebook.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-facebook" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession"
+                    href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-linkedin" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="title-team-item">
@@ -150,6 +251,37 @@
             <div class="employee">
               <h3 class="name">Daniel Wilson</h3>
               <p class="profession">UI Designer</p>
+              <ul class="profession-icon">
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://www.instagram.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-instagram" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://twitter.com/?lang=uk">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-twitter" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession" href="https://uk-ua.facebook.com/">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-facebook" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="profession-icon-item">
+                  <a class="link-profession"
+                    href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                    <svg class="icon" width="40" height="40">
+                      <use class="icon-svg" href="/images/icons.svg.svg#icon-linkedin" width="16" height="16"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -167,6 +299,16 @@
       </p>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+      <button type="button" class="modal-close-button" data-modal-close>
+        <svg width="8px" height="8px" class="close-button">
+          <use href="/images/icons.svg.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="/js/modal.js"></script>
 </body>
 
 </html>
