@@ -103,6 +103,7 @@ img {
 
 .navigation-item {
   padding: 24px 0;
+  color: #404bbf;
 }
 
 .logo {
@@ -260,7 +261,7 @@ img {
   border: none;
   height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-property: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-button:hover,
@@ -370,7 +371,7 @@ img {
   background-color: #404bbf;
 }
 
-.title-team-list .title-team-item:focus .link-profession {
+.link-profession:focus {
   background-color: #404bbf;
 }
 
@@ -475,7 +476,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--subtle-text);
-  transition-property: border-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-list-customers {
@@ -579,7 +580,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-socmed-link:hover {
@@ -710,10 +711,6 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden .modal-window {
-  transform: translate(50%, -50%) scaleX(0);
 }
 
 .modal-close-button {
