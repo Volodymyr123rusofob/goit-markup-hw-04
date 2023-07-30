@@ -5,6 +5,7 @@
   --cloud: #f4f4fd;
   --background-footer: #2e2f42;
   --color-accent: #e7e9fc;
+  --subtle-text: #8e8f99;
 }
 
 body {
@@ -46,6 +47,9 @@ ul {
   width: 100%;
   border-bottom: 1px solid var(--color-accent);
   background: var(--background);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container-nav {
@@ -125,6 +129,8 @@ img {
   background-color: #404bbf;
   top: 100%;
   transform: translateY(-100%);
+  left: 0;
+  bottom: -1px;
 }
 
 .current .link {
@@ -194,7 +200,11 @@ img {
 .item-advantages-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
 }
 
 .logo-footer {
@@ -202,6 +212,7 @@ img {
 }
 
 .section-subject {
+  margin: auto;
   background-color: var(--background-footer);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -210,7 +221,8 @@ img {
     url(../images/bacgraund.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
+  max-width: 1440px;
+  background-size: cover;
 }
 
 .container-subject {
@@ -248,9 +260,7 @@ img {
   border: none;
   height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-button:hover,
@@ -355,7 +365,10 @@ img {
   width: auto;
 }
 
-.title-team-list .title-team-item:hover .link-profession,
+.title-team-list .title-team-item:hover .link-profession {
+  background-color: #404bbf;
+}
+
 .title-team-list .title-team-item:focus .link-profession {
   background-color: #404bbf;
 }
@@ -395,13 +408,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 50%;
   background-color: var(--brand-color);
   width: 40px;
   height: 40px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+  fill: var(--cloud);
 }
 
 .link-upper {
@@ -453,8 +470,15 @@ img {
 }
 
 .link-item-customers {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: var(--subtle-text);
+  transition-property: border-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-list-customers {
@@ -466,19 +490,25 @@ img {
   justify-content: center;
   width: 168px;
   height: 88px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-list-customers:hover,
-.item-list-customers:focus {
+.link-item-customers:hover {
   border-color: #404bbf;
+  color: #404bbf;
+}
+
+.link-item-customers:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 .item-list-customers:hover .icon-customers,
 .item-list-customers:focus .icon-customers {
   fill: #404bbf;
+}
+
+.icon-item-list-customers {
+  fill: currentColor;
 }
 
 .icon-customers {
