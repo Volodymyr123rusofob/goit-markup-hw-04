@@ -477,13 +477,13 @@ img {
 
 .link-item-customers {
   border: 1px solid #8e8f99;
-  width: 100%;
-  height: 88px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--subtle-text);
+  width: 100%;
+  height: 88px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -719,7 +719,7 @@ img {
 .modal-close-button {
   display: flex;
   fill: var(--cloud);
-  background-color: var(--cloud);
+  background-color: var(--color-accent);
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -757,9 +757,9 @@ img {
 }
 
 .modal-close-button:hover .close-button {
-  fill: var(--background);
+  fill: #ffffff;
 }
 
 .modal-close-button:focus .close-button {
-  fill: var(--background);
+  fill: #ffffff;
 }
